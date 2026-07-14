@@ -369,47 +369,49 @@ Menos poses aburridas y más fotos reales que muestren tu mejor versión. Si bus
 
     <!-- //se añade info de los paquetes -->
 
-        <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Descripción</th>
-            <th scope="col">Incluye</th>
-            <th scope="col">Costo</th>
-            <th scope="col">Contacta</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <tr>
-            <th scope="row">1</th>
-            <td>Sesión fotográfica estandar (1 hora)</td>
-            <td><strong>20 fotografías</strong> editadas + entrega digital + 10 fotos impresas</td>
-            <td>$180.000</td>
-            <td>
-              <button type="button" class="btn btn-outline-primary">
-                <a href="https://wa.me/573142380831?text=Hola,
-                %20quiero%20información%20del%20paquete%20de%20bodas%20de%20$450.000"
-                target="_blank" class="btn-1">Cotizar</a>
-              </button>   
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Sesión fotográfica personalizada o evento</td>
-            <td><strong>¿No encuentras lo que buscas?</strong> Cuéntanos qué evento o sesión tienes en mente. Organizaremos un presupuesto especial de acuerdo a tus necesidades y deseos.</td>
-
-            <td >$</td>
-            <td>
-              <button type="button" class="btn btn-outline-success">
-                <a href="https://wa.me/573142380831?text=Hola,
-                %20quiero%20información%20de%20un%20paquete%20personalizado"
-                target="_blank" class="btn-1">Cotizar</a>
-              </button> 
-            </td>
-          </tr>
-        </tbody>
-      </table>
+<div class="table-responsive">
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Incluye</th>
+        <th scope="col">Costo</th>
+        <th scope="col" class="text-nowrap">Contacta</th> <!-- Añadido text-nowrap -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Sesión fotográfica estandar (1 hora)</td>
+        <td><strong>20 fotografías</strong> editadas + entrega digital + 10 fotos impresas</td>
+        <td>$180.000</td>
+        <td class="text-nowrap"> <!-- Añadido text-nowrap -->
+          <!-- ELIMINÉ el <button> y dejé SOLO el <a> con clases btn -->
+          <a href="https://wa.me/573142380831?text=Hola,%20quiero%20información%20del%20paquete%20de%20bodas%20de%20$450.000"
+             target="_blank" 
+             class="btn btn-outline-primary btn-sm"> <!-- btn-sm opcional para móvil -->
+             Cotizar
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Sesión fotográfica personalizada o evento</td>
+        <td><strong>¿No encuentras lo que buscas?</strong> Cuéntanos qué evento o sesión tienes en mente. Organizaremos un presupuesto especial de acuerdo a tus necesidades y deseos.</td>
+        <td>$</td>
+        <td class="text-nowrap"> <!-- Añadido text-nowrap -->
+          <!-- ELIMINÉ el <button> y dejé SOLO el <a> con clases btn -->
+          <a href="https://wa.me/573142380831?text=Hola,%20quiero%20información%20de%20un%20paquete%20personalizado"
+             target="_blank" 
+             class="btn btn-outline-success btn-sm"> <!-- btn-sm opcional para móvil -->
+             Cotizar
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
       <!--
             <div class="heading_container">
