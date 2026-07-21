@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "eyebrow": "Fotografía & video que se sienten",
+    "title": "Servicios para los capítulos que más importan.",
+    "description": "Elige una experiencia o escríbenos para crear una propuesta a tu medida."
+  },
+  "offerings": [
+    {
+      "id": "bodas",
+      "title": "Bodas",
+      "description": "El día de la boda se pasa en un abrir y cerrar de ojos. Nuestro trabajo es hacer que puedas volver a vivirlo cada vez que mires tu álbum.",
+      "gallery": ["1.png", "2.png", "3.png", "6.png", "4.png", "12.png"],
+      "packages": [
+        {
+          "name": "Cobertura de la ceremonia (2–3 horas)",
+          "includes": "25 fotografías editadas y entrega digital",
+          "price": "$400.000"
+        },
+        {
+          "name": "Ceremonia y sesión de pareja",
+          "includes": "50 fotografías editadas, entrega digital y fotos impresas",
+          "price": "$700.000"
+        },
+        {
+          "name": "Cobertura completa del evento",
+          "includes": "80 fotografías editadas y reel resumen",
+          "price": "$1.200.000"
+        }
+      ]
+    },
+    {
+      "id": "xv-anos",
+      "title": "XV años",
+      "description": "Una noche soñada merece recuerdos que muestren toda su energía, amor y personalidad.",
+      "packages": [
+        {
+          "name": "Sesión fotográfica (1 hora)",
+          "includes": "20 fotografías editadas y entrega digital",
+          "price": "$250.000"
+        },
+        {
+          "name": "Sesión fotográfica (2 horas)",
+          "includes": "40 fotografías editadas, entrega digital y fotos impresas",
+          "price": "$450.000"
+        },
+        {
+          "name": "Sesión y cobertura de la fiesta",
+          "includes": "70 fotografías editadas y reel resumen",
+          "price": "$750.000"
+        }
+      ]
+    },
+    {
+      "id": "sesiones-personales",
+      "title": "Sesiones personales",
+      "description": "Menos poses aburridas y más fotos reales que muestren tu mejor versión.",
+      "packages": [
+        {
+          "name": "Sesión fotográfica estándar (1 hora)",
+          "includes": "20 fotografías editadas, entrega digital y 10 fotos impresas",
+          "price": "$180.000"
+        },
+        {
+          "name": "Sesión personalizada o evento",
+          "includes": "Cuéntanos tu idea; prepararemos una propuesta a tu medida.",
+          "price": "A cotizar"
+        }
+      ]
+    },
+    {
+      "id": "eventos-cristianos",
+      "title": "Eventos cristianos",
+      "description": "Documentamos congresos, bautizos, aniversarios y encuentros de fe con una mirada respetuosa y llena de propósito.",
+      "packages": [
+        {
+          "name": "Cobertura de celebración o ceremonia",
+          "includes": "Registro fotográfico profesional y entrega digital",
+          "price": "A cotizar"
+        },
+        {
+          "name": "Foto y video para comunidad",
+          "includes": "Cobertura personalizada según duración y necesidades",
+          "price": "A cotizar"
+        }
+      ]
+    }
+  ]
+}

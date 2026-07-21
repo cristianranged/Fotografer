@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "slides": [
+      { "id": "boda", "image": "/images/hero-bg.jpg" },
+      { "id": "celebracion", "image": "/images/hero-side-bg.jpg" },
+      { "id": "retrato", "image": "/images/hero-side-bg2.jpg" }
+    ],
+    "eyebrow": "Fotografía & video · Ocaña, Colombia",
+    "title": "Las historias más importantes",
+    "highlight": "merecen quedarse.",
+    "description": "Capturamos la emoción real de bodas, XV años, sesiones y eventos de fe.",
+    "primaryAction": "Cuéntanos tu historia",
+    "secondaryAction": "Explorar servicios"
+  },
+  "intro": "Momentos irrepetibles · Imágenes con alma · Recuerdos para siempre",
+  "about": {
+    "eyebrow": "Detrás del lente",
+    "title": "No solo tomamos fotos.",
+    "highlight": "Guardamos sensaciones.",
+    "description": "En Rangel Shot creemos que cada abrazo, mirada y celebración tiene valor. Trabajamos con cercanía y sensibilidad para crear imágenes que se sientan tan vivas como el día en que ocurrieron.",
+    "action": "Conoce nuestra manera de mirar",
+    "images": [
+      { "src": "/images/a-1.jpg", "alt": "Sesión fotográfica profesional" },
+      { "src": "/images/a-2.jpg", "alt": "Fotografía de eventos" }
+    ]
+  },
+  "servicesSection": {
+    "eyebrow": "Nuestro enfoque",
+    "title": "Tu historia tiene una luz propia.",
+    "description": "Elegimos la mirada, el ritmo y cada detalle para que vuelvas a sentir el momento.",
+    "action": "Conocer opciones →",
+    "services": [
+      {
+        "id": "bodas",
+        "image": "/images/p-1.jpg",
+        "icon": "/images/wedding-rings.png",
+        "title": "Bodas",
+        "description": "La emoción de decir sí, para siempre."
+      },
+      {
+        "id": "xv-anos",
+        "image": "/images/p-2.jpg",
+        "icon": "/images/crown.png",
+        "title": "XV años",
+        "description": "Una celebración única, contada a tu manera."
+      },
+      {
+        "id": "sesiones-personales",
+        "image": "/images/p-4.jpg",
+        "icon": "/images/heart.png",
+        "title": "Sesiones personales",
+        "description": "Retratos honestos que hablan de ti."
+      },
+      {
+        "id": "eventos-cristianos",
+        "image": "/images/p-3.jpg",
+        "icon": "/images/confetti.png",
+        "title": "Eventos cristianos",
+        "description": "Fe, comunidad y momentos de propósito."
+      }
+    ]
+  },
+  "promise": {
+    "eyebrow": "Nuestra promesa",
+    "title": "Vive el momento.",
+    "highlight": "Nosotros lo hacemos eterno.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Dirección cercana",
+        "description": "Te acompañamos con calma para que disfrutes cada instante."
+      },
+      {
+        "number": "02",
+        "title": "Mirada documental",
+        "description": "Emoción real, detalles honestos y una historia sin poses forzadas."
+      },
+      {
+        "number": "03",
+        "title": "Entrega cuidada",
+        "description": "Fotos y video preparados para volver a emocionarte una y otra vez."
+      }
+    ]
+  }
+}
