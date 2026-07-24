@@ -32,28 +32,28 @@
     "services": [
       {
         "id": "bodas",
-        "image": "/images/p-1.jpg",
+        "image": "/images/bodas/1.png",
         "icon": "/images/wedding-rings.png",
         "title": "Bodas",
         "description": "La emoción de decir sí, para siempre."
       },
       {
         "id": "xv-anos",
-        "image": "/images/p-2.jpg",
+        "image": "/images/quinceaños/xv_01.jpg",
         "icon": "/images/crown.png",
         "title": "XV años",
         "description": "Una celebración única, contada a tu manera."
       },
       {
         "id": "sesiones-personales",
-        "image": "/images/p-4.jpg",
+        "image": "/images/personas/02.jpg",
         "icon": "/images/heart.png",
         "title": "Sesiones personales",
         "description": "Retratos honestos que hablan de ti."
       },
       {
         "id": "eventos-cristianos",
-        "image": "/images/p-3.jpg",
+        "image": "/images/eventos/acordeon.JPG",
         "icon": "/images/confetti.png",
         "title": "Eventos cristianos",
         "description": "Fe, comunidad y momentos de propósito."
