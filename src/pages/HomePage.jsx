@@ -52,7 +52,7 @@ export default function HomePage() {
           <div className="service-grid">
             {homeContent.servicesSection.services.map((service, index) => (
               <Link
-                to="/servicios"
+                to={`/servicios#${service.id}`}
                 className={`service-card service-card--${index + 1}`}
                 key={service.id}
               >

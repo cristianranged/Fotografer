@@ -23,7 +23,7 @@ export default function ContactPage() {
             experiencia a tu medida.
           </p>
           <div className="contact-page__image">
-            <img src="/images/contact-img.png" alt="Cristian Rangel, fotógrafo" />
+            <img src="/images/contact-img.png" alt="Cámara y lente de fotografía" />
           </div>
         </div>
         <form className="contact-form" onSubmit={submit}>
