@@ -15,7 +15,7 @@ const galleries = Object.entries(imageImports).reduce((groups, [path, url]) => {
   const normalizedPath = path.replace(/\\/g, '/');
   const match = normalizedPath.match(/(?:^|\/)images\/(.+?)\/([^/]+)$/);
 
-  if (!match) {
+  if (!match || !url) {
     return groups;
   }
 
@@ -36,8 +36,19 @@ Object.keys(galleries).forEach((folder) => {
 });
 
 export function getGalleryImages(folder) {
-  return (galleries[folder] || []).map((item) => ({
+  const images = (galleries[folder] || []).map((item) => ({
     src: item.url,
     alt: `${normalizeAlt(item.name)} · Rangel Shot`,
   }));
+
+  if (images.length > 0) {
+    return images;
+  }
+
+  return [
+    {
+      src: '/images/pareja/03.JPG',
+      alt: 'Imagen de respaldo · Rangel Shot',
+    },
+  ];
 }
