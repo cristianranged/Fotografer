@@ -554,7 +554,7 @@ em {
 
 /* Promise & testimonials */
 .promise-section {
-  background: var(--ink) url('/images/quality-bg.jpg') center / cover;
+  background: var(--ink) url('/images/quality-bg.jpg') center / cover no-repeat;
   color: #fff;
 }
 .promise-section::before {
