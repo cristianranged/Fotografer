@@ -29,8 +29,8 @@
     "description": "Trabajamos con cercanía para crear imágenes que vuelvan a vivir el momento.",
     "action": "Conoce nuestra manera de mirar",
     "images": [
-      { "src": "/images/pareja/02.JPG", "alt": "Sesión fotográfica profesional" },
-      { "src": "/images/eventos/02.jpg", "alt": "Fotografía de eventos" }
+      { "src": "/images/pareja/03.JPG", "alt": "Sesión fotográfica profesional" },
+      { "src": "/images/eventos/acordeon.JPG", "alt": "Fotografía de eventos" }
     ]
   },
   "servicesSection": {
@@ -41,14 +41,14 @@
     "services": [
       {
         "id": "bodas",
-        "image": "/images/bodas/1.png",
+        "image": "/images/bodas/1.JPG",
         "icon": "/images/wedding-rings.png",
         "title": "Bodas",
         "description": "La emoción de decir sí, para siempre."
       },
       {
         "id": "xv-anos",
-        "image": "/images/quinceaños/xv_01.jpg",
+        "image": "/images/quinceaños/1.JPG",
         "icon": "/images/crown.png",
         "title": "XV años",
         "description": "Una celebración única, contada a tu manera."

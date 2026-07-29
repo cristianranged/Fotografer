@@ -363,6 +363,36 @@ em {
   color: var(--muted);
   line-height: 1.75;
 }
+.instagram-section__status {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.instagram-section__feed {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.instagram-section__post {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 34px rgba(23, 19, 15, 0.08);
+  text-decoration: none;
+  color: inherit;
+}
+.instagram-section__post img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+.instagram-section__post-meta {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
 .instagram-section__button {
   width: fit-content;
 }
