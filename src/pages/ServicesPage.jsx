@@ -1,16 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import ContactCtaSection from '@/components/sections/ContactCtaSection';
 import ExperiencePromiseSection from '@/components/sections/ExperiencePromiseSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import ServiceGallery from '@/components/common/ServiceGallery';
 import servicesContent from '@/content/services.json';
 import { whatsappUrl } from '@/constants/site';
 
 function ServicePackagesSection({ service }) {
-  const [showAllPhotos, setShowAllPhotos] = useState(false);
-  const gallery = service.gallery ?? [];
-  const visibleGallery = showAllPhotos ? gallery : gallery.slice(0, 3);
-  const hasMorePhotos = gallery.length > 3;
-
   return (
     <section className="package-section" id={service.id}>
       <div className="container">
@@ -19,28 +15,7 @@ function ServicePackagesSection({ service }) {
           <h1>{service.title}</h1>
           <p>{service.description}</p>
         </div>
-        {gallery.length > 0 && (
-          <div className="portfolio-gallery">
-            {visibleGallery.map((image) => (
-              <figure className="portfolio-gallery__item" key={image}>
-                <img
-                  src={`/images/${service.galleryFolder}/${image}`}
-                  alt={`Fotografía de ${service.title.toLowerCase()}`}
-                  loading="lazy"
-                />
-              </figure>
-            ))}
-            {hasMorePhotos && (
-              <button
-                type="button"
-                className="button button--light portfolio-gallery__toggle"
-                onClick={() => setShowAllPhotos((current) => !current)}
-              >
-                {showAllPhotos ? 'Mostrar menos' : 'Ver más fotografías'}
-              </button>
-            )}
-          </div>
-        )}
+        <ServiceGallery folder={service.galleryFolder} title={service.title} />
         <div className="package-table-wrap">
           <div className="package-card-list">
             {service.packages.map((packageOption) => (
@@ -51,9 +26,7 @@ function ServicePackagesSection({ service }) {
                 </div>
                 <p>{packageOption.includes}</p>
                 <a
-                  href={whatsappUrl(
-                    `Hola, quiero información del paquete: ${packageOption.name}`,
-                  )}
+                  href={whatsappUrl(`Hola, quiero información del paquete: ${packageOption.name}`)}
                   target="_blank"
                   rel="noreferrer"
                 >

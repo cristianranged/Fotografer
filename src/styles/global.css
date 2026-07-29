@@ -212,59 +212,23 @@ em {
 }
 .hero-carousel,
 .hero-carousel .react-carousel__viewport,
-.hero-carousel .react-carousel__slide,
-.hero-slide {
-  min-height: clamp(520px, 76vh, 710px);
+.hero-carousel .react-carousel__slide {
+  min-height: clamp(520px, 72vh, 820px);
 }
 .hero-slide {
   position: relative;
-  display: flex;
-  align-items: center;
-  background-color: #151210;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: content-box;
+  min-height: clamp(520px, 72vh, 820px);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #070503;
 }
-.hero-slide::before {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(22, 18, 16, 0.82) 0%,
-    rgba(22, 18, 16, 0.48) 48%,
-    rgba(22, 18, 16, 0.18) 100%
-  );
-  content: '';
-}
-.hero-content {
-  position: relative;
-  width: min(720px, calc(100% - 48px));
-  margin: auto;
-  margin-left: max(24px, calc((100vw - 1160px) / 2));
-  color: #fff;
-}
-.hero-content .eyebrow {
-  color: #f1cb8b;
-}
-.hero-content h1 {
-  max-width: 680px;
-  margin-bottom: 1.35rem;
-}
-.hero-content h1 em {
-  color: #f1cb8b;
-}
-.hero-copy {
-  max-width: 480px;
-  margin-bottom: 2rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1.08rem;
-  line-height: 1.7;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
+.hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
 }
 .react-carousel {
   position: relative;
@@ -316,17 +280,114 @@ em {
 .react-carousel__dots button.is-active {
   background: #fff;
 }
-.intro-strip {
-  background: var(--terracotta);
-  color: #fff;
+.expandable-gallery {
+  display: grid;
+  gap: 2rem;
 }
-.intro-strip p {
-  margin: 0;
-  padding: 1.1rem 0;
-  font-family: var(--serif);
-  font-size: clamp(1.1rem, 2vw, 1.45rem);
-  font-style: italic;
+.expandable-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.expandable-gallery__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: opacity 0.45s ease, transform 0.45s ease, max-height 0.45s ease;
+}
+.expandable-gallery__item.is-visible {
+  max-height: 900px;
+  opacity: 1;
+  transform: none;
+}
+.expandable-gallery__item img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+.expandable-gallery__toggle {
+  justify-self: center;
+  margin-top: 0.5rem;
+  border-color: rgba(32, 29, 27, 0.08);
+  background: transparent;
+  color: var(--ink);
+}
+.instagram-section {
+  background: #f9f6f1;
+}
+.instagram-section__wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+}
+.instagram-section__heading {
+  max-width: 620px;
+}
+.instagram-section__heading p {
+  margin-top: 1rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.instagram-section__card {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 22px 50px rgba(23, 19, 15, 0.08);
+}
+.instagram-section__preview {
+  min-height: 290px;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  background: linear-gradient(180deg, #fffdfa 0%, #f0e7dc 100%);
+  display: grid;
+  gap: 0.75rem;
+  place-content: center;
   text-align: center;
+  color: var(--ink);
+}
+.instagram-section__preview span {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.instagram-section__preview p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.instagram-section__button {
+  width: fit-content;
+}
+@media (max-width: 880px) {
+  .expandable-gallery__grid,
+  .instagram-section__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 680px) {
+  .hero-carousel,
+  .hero-carousel .react-carousel__viewport,
+  .hero-carousel .react-carousel__slide,
+  .hero-slide {
+    min-height: 56vh;
+  }
+  .react-carousel__previous,
+  .react-carousel__next {
+    width: 38px;
+    height: 38px;
+  }
+  .react-carousel__dots {
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
 
 /* About and services */

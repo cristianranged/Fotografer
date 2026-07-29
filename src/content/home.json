@@ -1,9 +1,9 @@
 {
   "hero": {
     "slides": [
-      { "id": "boda", "image": "/images/bodas/1.png" },
-      { "id": "celebracion", "image": "/images/quinceaños/xv_01.jpg" },
-      { "id": "retrato", "image": "/images/personas/02.jpg" }
+      { "id": "boda", "image": "/images/bodas/1.JPG", "alt": "Pareja en luz dorada" },
+      { "id": "retrato", "image": "/images/pareja/03.JPG", "alt": "Retrato editorial con contraste natural" },
+      { "id": "evento", "image": "/images/eventos/acordeon.JPG", "alt": "Instante documental en celebración" }
     ],
     "eyebrow": "Fotografía & video · Ocaña, Colombia",
     "title": "Las historias más importantes",
@@ -11,6 +11,15 @@
     "description": "Capturamos la emoción real de bodas, XV años, sesiones y eventos de fe.",
     "primaryAction": "Reservar fecha",
     "secondaryAction": "Ver paquetes"
+  },
+  "featuredGallery": {
+    "eyebrow": "Colección seleccionada",
+    "title": "Imágenes que hablan sin palabras",
+    "folder": "bodas"
+  },
+  "instagramSection": {
+    "title": "Miradas recientes",
+    "description": "Espacio preparado para integrar tu feed oficial de Instagram cuando decidas activarlo."
   },
   "intro": "Momentos irrepetibles · Imágenes con alma · Recuerdos para siempre",
   "about": {
@@ -20,7 +29,7 @@
     "description": "Trabajamos con cercanía para crear imágenes que vuelvan a vivir el momento.",
     "action": "Conoce nuestra manera de mirar",
     "images": [
-      { "src": "/images/personas/02.jpg", "alt": "Sesión fotográfica profesional" },
+      { "src": "/images/pareja/02.JPG", "alt": "Sesión fotográfica profesional" },
       { "src": "/images/eventos/02.jpg", "alt": "Fotografía de eventos" }
     ]
   },
