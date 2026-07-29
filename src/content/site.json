@@ -2,7 +2,6 @@
   "name": "Rangel Shot",
   "description": "Fotografía y video profesional para bodas, XV años, sesiones personales y eventos cristianos.",
   "areaServed": "Ocaña, Colombia",
-  "instagramUrl": "https://www.instagram.com/rangel_shot/",
   "navigation": [
     { "label": "Inicio", "to": "/" },
     { "label": "¿Quiénes somos?", "to": "/nosotros" },
@@ -12,7 +11,6 @@
   "contactCta": {
     "eyebrow": "Tu historia comienza aquí",
     "title": "Hablemos de ese día que no quieres olvidar.",
-    "whatsappLabel": "Cotizar ahora",
-    "instagramLabel": "Ver Instagram"
+    "whatsappLabel": "Cotizar ahora"
   }
 }

@@ -1,9 +1,9 @@
 import Carousel from '@/components/common/Carousel';
 import BusinessSchema from '@/components/seo/BusinessSchema';
 import GallerySection from '@/components/sections/GallerySection';
-import InstagramSection from '@/components/sections/InstagramSection';
 import ContactCtaSection from '@/components/sections/ContactCtaSection';
 import homeContent from '@/content/home.json';
+import { imageAssets } from '@/utils/imageAssets';
 
 export default function HomePage() {
   return (
@@ -16,13 +16,22 @@ export default function HomePage() {
           className="hero-carousel"
           renderItem={(slide) => (
             <div className="hero-slide">
-              <img src={slide.image} alt={slide.alt} loading="eager" />
+              <img
+                src={
+                  slide.id === 'boda'
+                    ? imageAssets.heroBoda
+                    : slide.id === 'retrato'
+                      ? imageAssets.heroPareja
+                      : imageAssets.heroEvento
+                }
+                alt={slide.alt}
+                loading="eager"
+              />
             </div>
           )}
         />
       </section>
       <GallerySection />
-      <InstagramSection />
       <ContactCtaSection />
     </>
   );

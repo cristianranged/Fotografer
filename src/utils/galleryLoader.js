@@ -45,9 +45,16 @@ export function getGalleryImages(folder) {
     return images;
   }
 
+  const fallbackByFolder = {
+    bodas: '/images/bodas/1.JPG',
+    quinceaños: '/images/quinceaños/1.JPG',
+    personas: '/images/personas/02.jpg',
+    eventos: '/images/eventos/acordeon.JPG',
+  };
+
   return [
     {
-      src: '/images/pareja/03.JPG',
+      src: fallbackByFolder[folder] || '/images/pareja/03.JPG',
       alt: 'Imagen de respaldo · Rangel Shot',
     },
   ];
