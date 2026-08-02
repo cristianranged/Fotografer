@@ -19,6 +19,14 @@ export default function ContactCtaSection() {
           >
             {contactCta.whatsappLabel}
           </a>
+          <a
+            className="button button--line"
+            href={siteContent.instagramUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {contactCta.instagramLabel}
+          </a>
         </div>
       </div>
     </section>

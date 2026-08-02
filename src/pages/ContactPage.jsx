@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { whatsappUrl } from '@/constants/site';
-import { imageAssets } from '@/utils/imageAssets';
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const submit = (event) => {
@@ -24,7 +23,7 @@ export default function ContactPage() {
             experiencia a tu medida.
           </p>
           <div className="contact-page__image">
-            <img src={imageAssets.contactImg} alt="Cámara y lente de fotografía" />
+            <img src="/images/contact-img.png" alt="Cámara y lente de fotografía" />
           </div>
         </div>
         <form className="contact-form" onSubmit={submit}>

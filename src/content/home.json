@@ -1,9 +1,9 @@
 {
   "hero": {
     "slides": [
-      { "id": "boda", "image": "/images/bodas/1.JPG", "alt": "Pareja en luz dorada" },
-      { "id": "retrato", "image": "/images/pareja/03.JPG", "alt": "Retrato editorial con contraste natural" },
-      { "id": "evento", "image": "/images/eventos/acordeon.JPG", "alt": "Instante documental en celebración" }
+      { "id": "boda", "image": "/images/bodas/1.png" },
+      { "id": "celebracion", "image": "/images/quinceaños/xv_01.jpg" },
+      { "id": "retrato", "image": "/images/personas/02.jpg" }
     ],
     "eyebrow": "Fotografía & video · Ocaña, Colombia",
     "title": "Las historias más importantes",
@@ -11,11 +11,6 @@
     "description": "Capturamos la emoción real de bodas, XV años, sesiones y eventos de fe.",
     "primaryAction": "Reservar fecha",
     "secondaryAction": "Ver paquetes"
-  },
-  "featuredGallery": {
-    "eyebrow": "Colección seleccionada",
-    "title": "Imágenes que hablan sin palabras",
-    "folder": "bodas"
   },
   "intro": "Momentos irrepetibles · Imágenes con alma · Recuerdos para siempre",
   "about": {
@@ -25,8 +20,8 @@
     "description": "Trabajamos con cercanía para crear imágenes que vuelvan a vivir el momento.",
     "action": "Conoce nuestra manera de mirar",
     "images": [
-      { "src": "/images/pareja/03.JPG", "alt": "Sesión fotográfica profesional" },
-      { "src": "/images/eventos/acordeon.JPG", "alt": "Fotografía de eventos" }
+      { "src": "/images/personas/02.jpg", "alt": "Sesión fotográfica profesional" },
+      { "src": "/images/eventos/02.jpg", "alt": "Fotografía de eventos" }
     ]
   },
   "servicesSection": {
@@ -37,14 +32,14 @@
     "services": [
       {
         "id": "bodas",
-        "image": "/images/bodas/1.JPG",
+        "image": "/images/bodas/1.png",
         "icon": "/images/wedding-rings.png",
         "title": "Bodas",
         "description": "La emoción de decir sí, para siempre."
       },
       {
         "id": "xv-anos",
-        "image": "/images/quinceaños/1.JPG",
+        "image": "/images/quinceaños/xv_01.jpg",
         "icon": "/images/crown.png",
         "title": "XV años",
         "description": "Una celebración única, contada a tu manera."

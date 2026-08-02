@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { navItems } from '@/constants/site';
-import { imageAssets } from '@/utils/imageAssets';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -9,7 +8,7 @@ export default function Header() {
     <header className="site-header">
       <nav className="site-nav container" aria-label="Principal">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-          <img src={imageAssets.logoBlack} alt="Rangel Shot" />
+          <img src="/images/logo-black.png" alt="Rangel Shot" />
           <span>
             Rangel Shot<small>Foto & video</small>
           </span>
